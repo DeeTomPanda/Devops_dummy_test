@@ -9,6 +9,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Dummy hello world
         run: echo Hello World!
+      - name: Test for build
+        run: 
+          npm i
+          npm run build
+          nodemon index.js
 
     
     
