@@ -15,7 +15,7 @@ jobs:
           npm run build
           nodemon index.js
       - name: Generate Artifacts
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: Artifact01
       - name: Artifacts step done!
