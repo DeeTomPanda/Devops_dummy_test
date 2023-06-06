@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Dummy hello world
         run: echo Hello World!
       - name: Set up node_env
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Test for build
@@ -21,10 +21,10 @@ jobs:
       - name: Make a dir for atrifacts
         run: mkdir artifacts
       - name: Generate Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Artifact01
-          path: ./artifacts
+          path: dist/
       - name: Artifacts step done!
         run: echo Artifacts uploaded
 
