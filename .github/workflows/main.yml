@@ -18,7 +18,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Artifact01
-          path: ./artifacts
       - name: Artifacts step done!
         run: echo Artifacts uploaded
 
